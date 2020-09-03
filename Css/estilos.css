@@ -1,0 +1,254 @@
+.header{
+
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+figure {
+    margin: 0;
+}
+
+.menu{
+    height: inherit;
+}
+
+
+.header ol{
+    height: 50px;
+    display: flex;
+
+}
+
+.header ol li{
+    height: inherit;
+}
+
+.header a{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+
+}
+
+
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin:0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    /*  font-style:italic;*/
+}
+
+h1{
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    /*text-transform: capitalize; */
+    color: white;
+    margin: 0;
+
+}
+
+h1 strong{
+    color: #026fff;
+}
+
+.hero{
+    height: 300px;
+/*     background-image: url('../Img/4.jpg');
+ */    background-color: #1b2127;
+/*     background-size: 500px 300px;
+    background-repeat: no-repeat; */
+/*     background-position-x: right;
+ */    display:flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image{
+    object-fit: cover;
+}
+
+
+
+.project{
+/*     border-top: 10px solid red;
+    border-right: 10px solid greenyellow;
+    border-left: 10px solid blanchedalmond;
+    border-bottom: 10px solid olivedrab;
+
+ */
+ /* border-color: orangered;
+ border-width: 15px;
+ border-style: solid; */
+ margin:20px;
+ border: 1px solid gray;
+ border-radius: 10px;
+ padding:20px;
+ display: flex;
+ justify-content: space-between;
+}
+
+.project-details{
+    width: 500px;
+    
+}
+
+.project-imageContainer{
+    width: 500px;
+    align-items: left;
+    
+}
+
+ .flexbox{
+    display:flex;
+    flex-wrap: nowrap; /* para que ningun eleemento caiga en la parte inferior */
+    flex-wrap: wrap;  /* para que si cambie  */
+    flex-direction: column;/* hace una sola columna */
+    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    
+    flex-shrink: 0;  /* para no alterar el ancho y alto */
+    align-self: flex-start; /* Se alinea la caja hijo */
+} 
+
+.header{
+    background-color: #1b2127;
+    color: white;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.footer{
+    background-color: black;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+.footer a {
+    color:white;
+}
+
+.event-list{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.event-list-title {
+    margin-left:20px;
+}
+
+.event {
+    
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;  /* Hace que al usar overflow este se quede el tamaño original de la imagen */
+    border-radius: 10px; /* Hace el borde redondeado */ 
+    overflow: hidden;  /* Oculta las esquinas de las imagenes */
+    background: #f4fbff ;
+}
+
+.event img{
+    width:480px;
+    height: 200px;
+    object-fit: cover;  /* cubre el espacio sin deformar la imagen */ 
+}
+.event-detail {
+    margin: 20px 40px;
+    margin-top:-40px;
+    background-color: white;
+    position:relative;
+    padding:20px;
+    text-align: center;
+
+}
+.event-description{
+    text-align: left;
+}
+
+.event-url{
+    border: 1px solid #056fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.contact{
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social{
+}
+.social-link{
+    display: inline-block;
+    width:50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+.social-link.twitter{
+    background-image: url('../Img/twitter.svg');
+}
+.social-link.facebook{
+    background-image: url('../Img/facebook.svg');
+}
+.social-link.github{
+    background-image: url('../Img/github.svg');
+}
+.social-link.instagram{
+    background-image: url('../Img/instagram.svg');
+}
+
+.container{
+ width: 1000px;
+ margin: 0 auto;
+ display: inherit;
+ justify-content: inherit;
+ align-items: inherit;
+ height: inherit;
+ flex-wrap: inherit;
+}
