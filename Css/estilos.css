@@ -4,6 +4,7 @@
     height: 50px;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -84,6 +85,7 @@ h1 strong{
  */    display:flex; 
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero-image{
@@ -105,9 +107,32 @@ h1 strong{
  margin:20px;
  border: 1px solid gray;
  border-radius: 10px;
+ margin-bottom: 15px;
  padding:20px;
  display: flex;
+ align-items: center;
  justify-content: space-between;
+ flex-wrap: wrap; 
+}
+.project-course,
+.project-date,
+.project-url {
+  margin: 10px 0;
+}
+.project-description {
+  font-size: 20px;
+}
+.project strong {
+  font-family: 'Fjalla One', sans-serif;
+}
+/* .project-date {
+  margin: 10px 0;
+} */
+
+.project-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .project-details{
@@ -116,9 +141,7 @@ h1 strong{
 }
 
 .project-imageContainer{
-    width: 500px;
-    align-items: left;
-    
+    width: 500px;    
 }
 
  .flexbox{
@@ -244,7 +267,7 @@ h1 strong{
 }
 
 .container{
- width: 1000px;
+ max-width: 1000px;
  margin: 0 auto;
  display: inherit;
  justify-content: inherit;
