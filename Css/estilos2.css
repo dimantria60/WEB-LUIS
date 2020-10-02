@@ -76,7 +76,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
+    flex-wrap: wrap;
   }
   
   .hero-image{
@@ -115,6 +115,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .project-course,
   .project-date,
@@ -153,6 +154,7 @@ body {
     height: 70px;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   
   ol,
@@ -328,4 +330,17 @@ body {
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+  }
+
+  
+  @media screen and (max-width: 1024px) {
+  }
+  @media screen and (max-width: 768px) {
+    body{
+      border: 10px solid green;
+    }
+  }
+  @media screen and (max-width: 480px) {
+  }
+  @media screen and (max-width: 320px) {
   }
