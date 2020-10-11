@@ -10,6 +10,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
         <div class="container">
             <figure class="logo">
@@ -40,8 +41,9 @@
             </h1>
            <img  class="hero-image"  src="Img/tittle.jpg" alt="" width="500" height="300" alt="imagen principal">
         </div>
-</section>
+    </section>
     <section id="portafolio" class="portfolio">
+        <!-- <video class="html-video" src="videos/f8.mp4" controls></video> -->
         <div class="container">
 
             <h2>Portafolio (proyectos destacados)</h2>
@@ -80,6 +82,7 @@
 
         <h2 id="Eventos" class="event-list-title">Mas sobre mi experiencia</h2>
     </div>
+   
     <section  class="event-list">
         <div class="container">
 
@@ -96,7 +99,11 @@
             </article>
             <article class="event">
                 <figure class="event-imageContainer">
-                    <img class="event-image" src="Img/3.jgp.jpg" alt="">
+                    <div class="flexible-video">
+        
+                        <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/B6qQ09m1NpM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <!-- <img class="event-image" src="Img/3.jgp.jpg" alt=""> -->
                 </figure>
                 <div class="event-detail">
                     
@@ -135,7 +142,7 @@
             <form action="/suscripcion/" class="form-email">
                 <h3>CREAMOS ALGO</h3>
                 <input type="text" placeholder="ACA DEJA EL E-MAIL" id="email">
-                <input type="submit" value="texto del boton">
+                <!-- <input type="submit" value="texto del boton"> -->
                 <button>enviar</button>
             </form>
             <div class="social">
@@ -155,10 +162,34 @@
             </div>
             <div>
                 <p>
-                    Designe with love <\3 by <a href="https://www.instagram.com/rosales_2212/">@rosales_2212</a>
+                    Designe with love 🥰 by <a href="https://www.instagram.com/rosales_2212/">@rosales_2212</a>
                 </p>
             </div>
         </div>
     </footer>
+    <script>
+        const menu = document.querySelector('.menu');
+        const burgerButton = document.querySelector('#burger-menu');
+        const ipad = window.matchMedia('screen and (max-width: 767px)');
+
+        ipad.addListener(validation)
+
+        function validation(event){
+             if(event.matches) {
+                burgerButton.addEventListener('click', hideShow);
+             } else {
+                burgerButton.removeEventListener('click', hideShow);
+
+             }
+        }
+
+        function hideShow(){
+            if (menu.classList.contains('is-active')){
+                menu.classList.remove('is-active');
+            }else{
+                menu.classList.add('is-active');
+            }
+        }
+    </script>
 </body>
 </html>
